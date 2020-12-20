@@ -18,7 +18,7 @@ augroup redact_pass
   autocmd!
   autocmd VimEnter
         \ /dev/shm/pass.?*/?*.txt
-        \,$TMPDIR/pass.?*/?*.txt
+        \,/private$TMPDIR/pass.?*/?*.txt
         \,/tmp/pass.?*/?*.txt
         \ call redact_pass#()
 augroup END
